@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <h1 class="que" id="question">Question</h1>
+      <form id="form">
+        <ul style="list-style-type: none">
+          <li>
+            <input type="radio" id="a" name="answer" class="answer" />
+            <lable for="a" id="a_text">answer</lable>
+          </li>
+          <br />
+          <li>
+            <input type="radio" id="b" name="answer" class="answer" />
+            <lable for="b" id="b_text">answer</lable>
+          </li>
+          <br />
+          <li>
+            <input type="radio" id="c" name="answer" class="answer" />
+            <lable for="c" id="c_text">answer</lable>
+          </li>
+          <br />
+          <li>
+            <input type="radio" id="d" name="answer" class="answer" />
+            <lable for="d" id="d_text">answer</lable>
+          </li>
+          <br>
+        </ul>
+      </form>
+      <div id="hidden" style="text-align: center; color:red;"></div>
+      <button id="submit"><div class="but">Submit</div></button>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
