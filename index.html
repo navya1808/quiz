@@ -2,9 +2,41 @@
 <html>
   <head>
     <title>Quiz App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-light" href="#"><h1>Navya quiz</h1></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <br>
+  <div class="container" style="justify-content: center;" id="con">
     <div class="quiz-container" id="quiz">
       <h1 class="que" id="question">Question</h1>
       <form id="form">
@@ -34,6 +66,7 @@
       <div id="hidden" style="text-align: center; color:red;"></div>
       <button id="submit"><div class="but">Submit</div></button>
     </div>
+  </div>
   </body>
   <script src="./script.js"></script>
 </html>
